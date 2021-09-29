@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratos Populares</title>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="/css/pratos-populares.css">
+</head>
+<body>
+  <header>
+    <h1>Allora Ristorante</h1>
+  </header>
+  <section>
+    <h3>I piatti più apprezzati</h3>
+    <p>Scopri i piatti che piacciono a tutti i tipi di palati ed è per questo che sono diventati i più
+      apprezzati nel ristorante.</p>
+  </section>
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" style="background-image: url(/assets/Trofie-al-pesto.jpg)">
+      <p>Trofie al pesto</p>
+    </div>
+    <div class="swiper-slide" style="background-image: url(/assets/Rigatoni-alla-Carbonara.jpg);">
+      <p>Rigatoni alla Carbonara</p>
+    </div>
+    <div class="swiper-slide" style="background-image: url(/assets/Brodetto.jpg);">
+      <p>Brodetto</p>
+    </div>
+    <div class="swiper-slide" style="background-image: url(/assets/Polenta.jpg)">
+      <p>Polenta</p>
+    </div>
+    <div class="swiper-slide" style="background-image: url(/assets/Risotto-alla-Milanese.jpg)">
+      <p>Risotto alla Milanese</p>
+    </div>
+    ...
+  </div>
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <div class="swiper-scrollbar"></div>
+</div>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="/js/pratos-populares.js"></script>
+</body>
+</html>
