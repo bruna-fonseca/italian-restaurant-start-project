@@ -4,8 +4,43 @@
   box-sizing: border-box;
 }
 
+body p, h1, h2, a {
+  font-family: Roboto, 'sans-serif';
+}
+
+body {
+  margin: 0;
+}
+
+.container-img {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: url('/assets//mushrooms.jpeg');
+  background-size: cover;
+  background-position: top;
+}
+
+.bronze {
+  color: #CC9B61;
+}
+
+.azul {
+  color: #18464C;
+}
+
+.navbar {
+    background-color: transparent;
+    background-image: none;
+}
+
 .swiper {
-  height: 500px;
+  height: 400px;
+}
+
+.swiper p {
+  font-weight: bold;
+  font-family: Roboto, 'sans-serif';
 }
 
 .swiper-slide {
@@ -41,4 +76,18 @@
   z-index: 1;
 }
 
-.swiper-slide p 
+.white {
+  color: white;
+}
+
+.swiper-button-next{
+  margin-right: 40px;
+}
+
+.swiper-button-prev{
+  margin-left: 40px;
+}
+
+.bold {
+  font-weight: bold;
+}
