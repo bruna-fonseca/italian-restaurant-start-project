@@ -1,9 +1,22 @@
 body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    height: 100%;
 }
+
+html{
+    overflow: hidden;
+}
+
+.navbar-end a {
+    color: #FFFAF3;
+   font-size: 20px;
+   font-family: 'Roboto', sans-serif;
+     /* font-weight: bold; */
+}
+
+#nav-links[class*="is-active"] a{
+    color: #CC9B61
+  }
 
 video{
     position: fixed;
@@ -14,39 +27,15 @@ video{
     height: 100vh;
 }
 
-header, section{
+section{
     position: relative;
     z-index: 1;
-}
-
-header{
     display: flex;
-    margin-left: 30px;
-    margin-top: 15px;
+    justify-content: center;
+    margin-top: 20vh;
 }
 
-nav{
-    margin-top: 26px;
-    margin-left: 80px;
-    font-size: 25px;
-}
-
-nav a{
-    color: #C99B61;
-    font-weight: bold;
-    text-decoration: none;
-    margin-left: 25px;
-}
-
-section{
-   display: flex;
-   justify-content: center;
-   align-items: center; 
-   margin-top: 25px ;
-}
-
-.home, nav a:hover{
-    border: 2px solid #C99B61;
-    padding: 6px;
-    border-radius:8px 2px;
+.navbar {
+    background-color: transparent;
+    background-image: none;
 }

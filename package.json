@@ -1,0 +1,23 @@
+{
+  "name": "italian-restaurant-start-project",
+  "version": "1.0.0",
+  "description": "### Ciao a tutti, siamo il \"Allora\" ristorante di cucina italiana.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruna-fonseca/italian-restaurant-start-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bruna-fonseca/italian-restaurant-start-project/issues"
+  },
+  "homepage": "https://github.com/bruna-fonseca/italian-restaurant-start-project#readme",
+  "dependencies": {
+    "bulma": "^0.9.3"
+  }
+}
