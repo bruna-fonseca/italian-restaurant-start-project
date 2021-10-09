@@ -1,0 +1,80 @@
+body {
+    background: url(../assets/background-contato.png)  no-repeat center bottom/cover; 
+    min-height: 100%;
+  }
+  
+
+
+
+.teste{
+  display:contents;
+ 
+}
+
+
+
+.titulo{
+
+    font-weight: bold;
+    font-family: Roboto, 'sans-serif';
+    font-size: 40px;
+    color: #18464C;
+
+}
+
+.paragrafo{
+
+    font-weight: bold;
+  font-family: Roboto, 'sans-serif';
+  font-size:20px;
+  color: #18464C;
+
+}
+.from-geral{
+
+ font-weight: bold;
+  font-family: Roboto, 'sans-serif';
+  font-size:13px;
+  color: #18464C;
+  margin-left: 90px;
+
+}
+
+.campos{
+
+  background-color: #18464C;
+  padding: 10px;
+  display: table;
+  border-radius: 8px;
+  border-color: coral;
+
+}
+
+input {
+  height: 35px;
+  width: 300px;
+}
+select{
+  height: 35px;
+  width: 300px;
+
+}
+
+.botão{
+border-radius: 15px;
+border-color: #CC9B61;
+color:#18464C ;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 17px;
+width: 200px;
+height:30px;
+background-color:#CC9B61;
+
+
+
+
+}
+
+
+
+

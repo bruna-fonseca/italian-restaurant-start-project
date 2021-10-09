@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,63 +7,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
     <script type="text/javascript" src="../js/contato.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/pratos-populares.css">
+    <link rel='stylesheet' href="../css/contato.css">
 
 </head>
 
 <body>
 
+    <header>
+
+        <nav class="navbar">
+
+            <div class="teste">
+                <div class="navbar-brand">
+                    <a href="" class="navbar-item">
+                        <img src="../assets/Prancheta-4.png" class="px-2 py-2 ml-6" alt="logo" 
+                            style="max-height: 90px;"  >
+                    </a>
+                    <a id="burger" class="navbar-burger">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="nav-links" class="navbar-menu px-4 py-10 mr-6">
+                    <div class="navbar-end">
+                        <a href="../html/home.html" class="navbar-item bronze">home</a>
+                        <a href="" class="navbar-item bronze">menu</a>
+                        <a href="" class="navbar-item bronze">best-sellers</a>
+                        <a href="" class="navbar-item bronze">reservas</a>
+                        <a href="" class="navbar-item bronze">login</a>
+                        <a href="../html/contato.html" class="navbar-item bronze">contato</a>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </nav>
+
+
+
+    </header>
+
+    <div class="from-geral">
+
+
+        <h1 class="titulo">Contato</h1>
+        <p class="paragrafo">Preencha o formulário abaixo:</p> <br>
+
+        <div class="campos">
+            <div>
+                <input type="text" name="nome" id="nome_completo" value="" placeholder="Nome Completo">
+            </div> <br>
+
+            <div>
+                <label></label>
+                <input type="text" name="E-mail" id="email" value="" placeholder="E-mail">
+            </div> <br>
+
+            <div>
+                <label></label>
+                <input type="text" name="telefone" id="telefone" value="" placeholder="Telefone">
+            </div> <br>
+
+
+            <div>
+                <label></label>
+                <select id="assunto">
+                    <option selected disabled value="">Assunto</option>
+                    <option>Pedido</option>
+                    <option>Localização</option>
+                    <option>Preciso de ajuda</option>
+                    <option>Reclamação</option>
+                </select>
+            </div> <br>
+
+
+            <div>
+                <br>
+                <label></label>
+                <textarea rows="8 " style="max-width: 500px; min-width: 400px; width: 400px; min-height:100px;"  name="msg" id="menssagem" value=""
+                    placeholder="Menssagem"></textarea>
+            </div> <br>
+
+            <center>
+
+                <button class="botão" onclick="enviarMenssagem()" type="submit">Concluído</button>
+                <p id="menssagem_final"></p>
+
+            </center>
+
+        </div>
+
+    </div><br> <br>
+
 
     <div>
-
-        <h1>Contato:</h1>
-        <p>Preencha o formulário abaixo:</p>
-
-        
-
-            <div>
-                <label>Nome Completo</label>
-                <input type="text" name="nome" id="nome_completo">
-            </div>
-
-            <div>
-                <label>E-mail</label>
-                <input type="text" name="E-mail" id="email">
-            </div>
-
-            <div>
-                <label>Telefone</label>
-                <input type="text" name="telefone" id="telefone">
-            </div>
-
-
-            <div>
-                <label>Assunto</label>
-                <input type="text" name="assunto" id="assunto">
-            </div>
-
-
-            <div>
-                <label>Menssagem</label>
-                <input type="text" name="msg" id="menssagem">
-            </div>
-
-
-            <p id="menssagem_final"></p>
-
-            <button  onclick="enviarMenssagem()" type="submit">Concluído</button>
-
-
-
-        
+        <center>
+            <footer>@start2021</footer>
+        </center>
 
 
     </div>
-
-
-
-
-
-
 
 
 

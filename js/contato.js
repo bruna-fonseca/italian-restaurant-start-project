@@ -47,8 +47,4 @@ function enviarMenssagem() {
 
 
 
-//Função de retorno de sucesso
-//Metido feito para simplificado o codigo:
-
-
 
