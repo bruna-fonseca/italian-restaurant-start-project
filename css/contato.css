@@ -3,7 +3,7 @@ body {
   min-height: 100%;
 }
 
-.teste {
+.my-nav {
   display: contents;
 }
 
@@ -31,6 +31,7 @@ body {
 
 }
 
+/*css de campos(meu formulário)*/
 .campos {
   background-color: #18464C;
   padding: 40px 20px 20px 20px;
@@ -39,8 +40,7 @@ body {
   border-color: coral;
 
 }
-
-
+/*resposividade web, abaixo:*/
 @media (min-width : 390px) {
   .mensagemInput{
     max-width: 500px;
@@ -65,6 +65,7 @@ body {
   }
 }
 
+/*resposividade cell,abaixo:*/
 
 @media (max-width : 390px) {
   .mensagemInput {
