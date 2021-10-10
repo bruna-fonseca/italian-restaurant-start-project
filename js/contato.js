@@ -26,19 +26,19 @@ function enviarMenssagem() {
         if (email.includes('@') && email.includes(".")) {
 
             //Aqui busco colocar o "msg" do acontecimento no HTML para aparecer pro usuário, nesse caso é a validação do email.
-            document.getElementById("menssagem_final").innerHTML = "<font color='green'>Menssagem enviada </font>";
+            document.getElementById("menssagem_final").innerHTML = "<font color='#fffdfd'>Menssagem enviada :) </font>";
 
         } else {
 
             //Aqui busco colocar o "msg" do acontecimento no HTML para aparecer pro usuário, nesse caso é o erro do email.      
-            document.getElementById("menssagem_final").innerHTML = "<font color='red'>E-mail ivalido </font>";
+            document.getElementById("menssagem_final").innerHTML = "<font color='#e8fc95'>E-mail ivalido* </font>";
         }
 
         //Se não estiver OKAY:
     } else {
 
         //Aqui busco colocar o "msg" do acontecimento no HTML para aparecer pro usuário, neste caso o erro.
-        document.getElementById("menssagem_final").innerHTML = "<font color='red'>Preencha os campos </font>";
+        document.getElementById("menssagem_final").innerHTML = "<font color='#e8fc95'>Preencha os campos* </font>";
     }
 
 
