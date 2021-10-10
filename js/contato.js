@@ -31,14 +31,14 @@ function enviarMenssagem() {
         } else {
 
             //Aqui busco colocar o "msg" do acontecimento no HTML para aparecer pro usuário, nesse caso é o erro do email.      
-            document.getElementById("menssagem_final").innerHTML = "<font color='#e8fc95'>E-mail ivalido* </font>";
+            document.getElementById("menssagem_final").innerHTML = "<font color='#e8fc95'>E-mail inválido* </font>";
         }
 
         //Se não estiver OKAY:
     } else {
 
         //Aqui busco colocar o "msg" do acontecimento no HTML para aparecer pro usuário, neste caso o erro.
-        document.getElementById("menssagem_final").innerHTML = "<font color='#e8fc95'>Preencha os campos* </font>";
+        document.getElementById("menssagem_final").innerHTML = "<font color='#e8fc95'>Preencha todos os campos* </font>";
     }
 
 

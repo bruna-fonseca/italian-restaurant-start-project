@@ -31,31 +31,62 @@ body {
 
 }
 
-.from-geral {
-  font-weight: bold;
-  font-family: Roboto, 'sans-serif';
-  font-size: 13px;
-  color: #18464C;
-  margin-left: 90px;
-}
-
 .campos {
   background-color: #18464C;
   padding: 40px 20px 20px 20px;
-  display: table;
+  display: inline-block;
   border-radius: 8px;
   border-color: coral;
 
 }
 
-input {
-  height: 35px;
-  width: 300px;
+
+@media (min-width : 390px) {
+  .mensagemInput{
+    max-width: 500px;
+    min-width: 500px;
+    width: 500px;
+    min-height:100px;
+    height:100px;
+    max-height:100px;  
+  }  
+
+  input, select {
+    height: 35px;
+    width: 300px;
+  }
+
+  .from-geral {
+    font-weight: bold;
+    font-family: Roboto, 'sans-serif';
+    font-size: 13px;
+    color: #18464C;
+    margin-left: 90px;
+  }
 }
 
-select {
-  height: 35px;
-  width: 300px;
+
+@media (max-width : 390px) {
+  .mensagemInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height:50px;
+  }   
+
+  .from-geral {
+    font-weight: bold;
+    font-family: Roboto, 'sans-serif';
+    font-size: 13px;
+    color: #18464C;
+    display: table;
+  }
+
+  input, select {
+    height: 25;
+    width: 200px;
+  }
 }
 
 .botão {

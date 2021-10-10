@@ -59,47 +59,57 @@
 
     </header>
 
-    <div class="from-geral">
+    <div class="container from-geral">
 
 
         <h1 class="titulo">Contato</h1>
         <p class="paragrafo">Precisa de ajuda?</p>
         <p class="paragrafo2">Preencha o formulário abaixo:</p> <br>
 
-        <div class="campos">
-            <div>
-                <input type="text" name="nome" id="nome_completo" value="" placeholder="Nome Completo">
-            </div> <br>
+        <div class="container campos">
 
-            <div>
-                <label></label>
-                <input type="text" name="E-mail" id="email" value="" placeholder="E-mail">
-            </div> <br>
-
-            <div>
-                <label></label>
-                <input type="text" name="telefone" id="telefone" value="" placeholder="Telefone">
-            </div> <br>
+            <div class="field">
+                <div class="control">
+                    <input type="text" name="nome" id="nome_completo" value="" placeholder="Nome Completo">
+                </div>
+            </div>
 
 
-            <div>
-                <label></label>
-                <select id="assunto">
-                    <option selected disabled value="">Assunto</option>
-                    <option>Pedido</option>
-                    <option>Localização</option>
-                    <option>Preciso de ajuda</option>
-                    <option>Reclamação</option>
-                </select>
-            </div> <br>
+            <div class="field">
+                <div class="control">
+                    <input type="text" name="E-mail" id="email" value="" placeholder="E-mail">
+                </div>
+            </div>
 
 
-            <div>
-                <br>
-                <label></label>
-                <textarea rows="8 " style="max-width: 500px; min-width: 400px; width: 400px; min-height:100px;"
-                    name="msg" id="menssagem" value="" placeholder="Menssagem"></textarea>
-            </div> <br>
+            <div class="field">
+                <div class="control">
+                    <input type="text" name="telefone" id="telefone" value="" placeholder="Telefone">
+                </div>
+            </div>
+
+
+
+            <div class="field">
+                <div class="control">
+                    <div class="select">
+                        <select id="assunto">
+                            <option selected disabled value="">Assunto</option>
+                            <option>Pedido</option>
+                            <option>Localização</option>
+                            <option>Preciso de ajuda</option>
+                            <option>Reclamação</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="field">
+                <div class="control">
+                    <textarea rows="8 " class="mensagemInput" name="msg" id="menssagem" value="" placeholder="Menssagem"></textarea>
+                </div>
+            </div>
 
             <center>
 
@@ -110,7 +120,7 @@
 
         </div>
 
-    </div><br> <br>
+    </div>
 
 
     <div>
