@@ -2,11 +2,11 @@
   <img src="./assets/Prancheta-3-menor.png" />
 </div>
 
-# Projeto do Start
+# Projeto do Start🚀
 
 Projeto em grupo feito para a avaliação dos conhecimentos em HTML, CSS e Javascript.
 
-## Features
+## Features 🖥️
 
 - [Tela Home](#home)
 - [Tela de Cardápio](#menu)
@@ -15,18 +15,18 @@ Projeto em grupo feito para a avaliação dos conhecimentos em HTML, CSS e Javas
 - [Login](#login)
 - [Contato](#contato)
   
-## Tecnologias utilizadas
+## Tecnologias utilizadas 💾 
 
 **Front-end:** HTML, CSS, Javascript, [Bulma](https://bulma.io/documentation/) e [SwiperJS](https://swiperjs.com/)
   
-## Projeto
+## Projeto📋
 
 Você pode conferir o design inicial do projeto no
 [Figma.](https://www.figma.com/file/25wftXnAS0lizVhBBRh7Q1/Restaurante-Copy)
 
 <h2 id="home">Tela Home</h2>
 
-<img src="./assets/screenshot-home.png" />
+<img src="./assets/home.gif" />
 
 <h2 id="menu">Tela de Cardápio</h2>
 
