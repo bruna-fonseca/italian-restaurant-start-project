@@ -1,5 +1,5 @@
 <center>
-<img src="./assets/logo-pequena.png" />
+<img style="margin: 0 auto;" src="./assets/logo-pequena.png" />
 </center>
 
 # Restaurante Allora - Projeto Start
