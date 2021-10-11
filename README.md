@@ -2,7 +2,7 @@
   <img src="./assets/Prancheta-3-menor.png" />
 </div>
 
-# Restaurante Allora - Projeto Start
+# Projeto do Start
 
 Projeto em grupo feito para a avaliação dos conhecimentos em HTML, CSS e Javascript.
 
