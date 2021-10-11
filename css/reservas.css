@@ -3,11 +3,17 @@ div#principal-container{
     background-position: center;
     background-position-x: 0px;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%vh;
     width: 100vw;
     background-color: #F7F7F7;
 }
 
+#showForm a {
+    font-size: 18px;
+    margin: 20px;
+    color: #F7F7F7;
+    font-weight: bold;
+}
 
 div#container{
     display: flex;
@@ -87,6 +93,6 @@ div#reserv-present > button{
     cursor: pointer;
   }
 
-  form > input{
+  /* form > input{
     
-  }
+  } */

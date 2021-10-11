@@ -17,7 +17,7 @@ function enviarMenssagem() {
 // OBS: if para validar as princípais caracteristica do telefone
         if(telefone.length != 11){
         
-            document.getElementById("menssagem_final").innerHTML = "<font color='red'>Número de telefone precisa ter 11 digitos. </font>";
+            document.getElementById("menssagem_final").innerHTML = "<font color='#ff4040'>Número de telefone precisa ter 11 digitos. </font>";
            //return para encerrar essa etapa
             return
         }
