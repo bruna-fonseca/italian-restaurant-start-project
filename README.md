@@ -2,7 +2,6 @@
   <img src="./assets/logo-pequena.png" />
 </div>
 
-
 # Restaurante Allora - Projeto Start
 
 Projeto em grupo feito para a avaliação dos conhecimentos em HTML, CSS e Javascript.
