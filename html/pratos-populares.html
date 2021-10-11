@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <title>Pratos Populares</title>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="../css/pratos-populares.css">
+</head>
+<body>
+  <div class="container-img">
+  <header>
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="" class="navbar-item">
+          <img src="../assets/logo-simplificado.png" class="px-2 py-2 ml-6" alt="logo" style="max-height: 50px;">
+        </a>
+        <a id="burger" class="navbar-burger">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="nav-links" class="navbar-menu px-10 py-10 mr-6">
+        <div class="navbar-end">
+          <a href="/html/home.html" class="navbar-item bronze">home</a>
+          <a href="" class="navbar-item bronze">menu</a>
+          <a href="" class="navbar-item bronze">best-sellers</a>
+          <a href="" class="navbar-item bronze">reservas</a>
+          <a href="" class="navbar-item bronze">login</a>
+          <a href="" class="navbar-item bronze">contato</a>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="p-6">
+      <h1 class="azul title is-1 ml-5 mt-5">Best-sellers</h1>
+      <h2 class="bronze subtitle ml-5 mt-0" style="font-weight: bold; font-size: 2em">o melhor do nosso cardápio</h2>
+      <p class="subtitle azul ml-5 mt-6 mb-6">Conheça os nossos best-sellers, os pratos mais populares da casa que consquistam
+        o paladar até do mais exigente freguês. </p>
+    </div>
+  </section>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(../assets/Trofie-al-pesto.jpg)">
+          <p class="bold">Trofie al pesto</p>
+        </div>
+        <div class="swiper-slide" style="background-image: url(../assets/Rigatoni-alla-Carbonara.jpg);">
+          <p class="bold">Rigatoni alla Carbonara</p>
+        </div>
+        <div class="swiper-slide" style="background-image: url(../assets/Brodetto.jpg);">
+          <p class="bold">Brodetto</p>
+        </div>
+        <div class="swiper-slide" style="background-image: url(../assets/Polenta.jpg)">
+          <p class="bold">Polenta</p>
+        </div>
+        <div class="swiper-slide" style="background-image: url(../assets/Risotto-alla-Milanese.jpg)">
+          <p class="bold">Risotto alla Milanese</p>
+        </div>
+      </div>
+      <div class="swiper-button-prev white"></div>
+      <div class="swiper-button-next white"></div>
+
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="../js/swiper-config.js"></script>
+  <script src="../js/navbar-config.js"></script>
+
+</body>
+</html>

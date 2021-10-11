@@ -80,10 +80,11 @@ menu04.addEventListener('click', () =>{
 
 var menu05 = document.getElementsByClassName('menu')[5];
 
-menu05.addEventListener('click', () =>{
+menu05.addEventListener('click', () => {
         menu05 = menu05.getAttribute('href');
         if(menu05 === '#' || menu05 === ''){
           let msgErro = document.getElementsByClassName('erro')[0];
             showModal();
-        }    
+}    
+
 });

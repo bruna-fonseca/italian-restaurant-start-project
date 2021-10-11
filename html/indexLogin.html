@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styleLogin.css">
+  
+
+  <title>Tela de login</title>
+
+</head>
+
+<body>
+  <section>
+    <div class="imgBx">
+      <img src="/assets/Prancheta 3.png" alt="Img Initial">
+    </div>
+    <div class="contentBx">
+      <div class="formBx">
+        <h2>Login</h2>
+        <form action="" onsubmit="return validarLogin() ">
+          <div class="inputBx">
+            <span>Username</span>
+            <input type="text" name="nome" id="login">
+          </div>
+          <div class="inputBx">
+            <span>Password</span>
+            <input type="password" name="pass" id="senha">
+          </div>
+          <div class="remenber">
+            <input type="checkbox" name=""> Lembre-me
+          </div>
+          <div class="inputBx">
+            <input type="submit" value="Acessar" name="">
+          </div>
+           
+          <span id="mensagem"></span>
+          <span id="msgSuccess"></span>
+          <div class="inputBx"> <br>
+            <p>Esqueceu a senha?<a href="#" onclick="signout()">clique aqui.</a></p>
+            <span id="msg2"></span>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="/js/scriptLogin.js"></script>
+</body>
+</html>
