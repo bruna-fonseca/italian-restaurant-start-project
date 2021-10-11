@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/pratos-populares.css">
+    <link rel="stylesheet" href="/css/reservas.css">
+    <title>Restaurante</title>
+</head>
+
+<body>
+    <div id="principal-container">
+        <header>
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a href="" class="navbar-item">
+                        <img src="/assets/logo-simplificado.png" class="px-2 py-2 ml-6" alt="logo"
+                            style="max-height: 50px;">
+                    </a>
+                    <a id="burger" class="navbar-burger">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="nav-links" class="navbar-menu px-10 py-10 mr-6">
+                    <div class="navbar-end">
+                        <a href="/html/home.html" class="navbar-item bronze">home</a>
+                        <a href="" class="navbar-item bronze">menu</a>
+                        <a href="" class="navbar-item bronze">best-sellers</a>
+                        <a href="" class="navbar-item bronze">reservas</a>
+                        <a href="" class="navbar-item bronze">login</a>
+                        <a href="" class="navbar-item bronze">contato</a>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="container">
+            <div id="reserv-present">
+                <h1>Reserve sua mesa</h1>
+                <p>Prove o melhor da cozinha italiana</p>
+
+                <button id="showForm"> <a>Fazer reserva</a> </button>
+
+                <div id="myModal" class="modal">
+
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <form id="reservForm">
+                            <h2>Reservar uma mesa</h2>
+                            <label for="reservDate">Data:</label>
+                            <input type="date" name="reservDate" id="reservDate" class="input" onclick="clearMessage()">
+                            <label for="reservHour">Hora:</label>
+                            <input type="time" name="reservHour" id="reservHour" class="input" onclick="clearMessage()">
+                            <label for="reservPeople">Pessoas:</label>
+                            <input type="number" name="reservPeople" id="reservPeople" class="input" onclick="clearMessage()">
+                            <h2>Contato principal</h2>
+                            <label for="reservName">Nome: </label>
+                            <input type="text" name="reserName" id="reservName" class="input" onclick="clearMessage()">
+                            <label for="reservEmail">Email: </label>
+                            <input type="email" name="reservEmail" id="reservEmail" class="input" onclick="clearMessage()">
+                            <br>
+                            <br>
+                            <span id="message"></span>
+                            <div class="buttons">
+                                <button class="button is-success" type="submit" name="button">Salvar</button>
+                                <button class="button is-info" id="cancel"  name="button">Cancelar</button>
+                            </div>
+                        </form>
+                        
+                    </div>
+
+                </div>
+            </div>
+            <img src="../assets/reservas-prato.png" alt="reservas prato">
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="/js/swiper-config.js"></script>
+    <script src="/js/navbar-config.js"></script>
+    <script src="../js/reservas.js"></script>
+</body>
+
+</html>
