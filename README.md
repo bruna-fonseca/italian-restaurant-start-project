@@ -1,6 +1,7 @@
-<center>
-<img src="./assets/logo-pequena.png" />
-</center>
+<div align="center">
+  <img src="./assets/logo-pequena.png" />
+</div>
+
 
 # Restaurante Allora - Projeto Start
 
