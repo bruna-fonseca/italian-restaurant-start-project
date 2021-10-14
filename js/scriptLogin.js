@@ -31,7 +31,7 @@ function showModalSuccess() {
 
 span2.onclick = function () {
     modal2.style.display = "none";
-    window.location.href='#'
+    window.location.href='./home.html'
 }
 
 window.onclick = function (event2) {
@@ -69,6 +69,7 @@ function signout() {
     let esqueceuSenha = document.getElementById('msg2')
     esqueceuSenha.style.display = "block";
     esqueceuSenha.innerHTML = " Para recuperar a senha procure entrar em contato com o restaurante.";
+    
 }
 
 
