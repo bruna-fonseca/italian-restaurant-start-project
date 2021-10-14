@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <title>Fale Conosco - Allora</title>
+    <script type="text/javascript" src="../js/contato.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/pratos-populares.css">
+    <link rel='stylesheet' href="../css/contato.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="my-nav">
+                <div class="navbar-brand">
+                    <a href="home.html" class="navbar-item">
+                        <img src="../assets/Prancheta-4.png" class="px-2 py-2 ml-6" alt="logo"
+                            style="max-height: 90px;">
+                    </a>
+                    <a id="burger" class="navbar-burger">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="nav-links" class="navbar-menu px-4 py-10 mr-6">
+                    <div class="navbar-end">
+                        <a href="home.html" class="navbar-item bronze">home</a>
+                        <a href="cardapio.html" class="navbar-item bronze">menu</a>
+                        <a href="pratos-populares.html" class="navbar-item bronze">best-sellers</a>
+                        <a href="reservas.html" class="navbar-item bronze">reservas</a>
+                        <a href="indexLogin.html" class="navbar-item bronze">login</a>
+                        <a href="contato.html" class="navbar-item bronze">contato</a>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </nav>
+
+
+
+    </header>
+
+    <div class="container from-geral">
+
+
+        <h1 class="titulo">Contato</h1>
+        <p class="paragrafo">Precisa de ajuda?</p>
+        <p class="paragrafo2">Preencha o formulário abaixo:</p> <br>
+
+        <div class="container campos">
+
+            <div class="field">
+                <div class="control">
+                    <input type="text" name="nome" id="nome_completo" value="" placeholder="Nome Completo">
+                </div>
+            </div>
+
+
+            <div class="field">
+                <div class="control">
+                    <input type="text" name="E-mail" id="email" value="" placeholder="E-mail">
+                </div>
+            </div>
+
+
+            <div class="field">
+                <div class="control">
+                    <input type="text" name="telefone" id="telefone" value="" placeholder="Telefone">
+                </div>
+            </div>
+
+
+
+            <div class="field">
+                <div class="control">
+                    <div class="select">
+                        <select id="assunto">
+                            <option selected disabled value="">Assunto</option>
+                            <option>Pedido</option>
+                            <option>Localização</option>
+                            <option>Preciso de ajuda</option>
+                            <option>Reclamação</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="field">
+                <div class="control">
+                    <textarea rows="8 " class="mensagemInput" name="msg" id="menssagem" value="" placeholder="Menssagem"></textarea>
+                </div>
+            </div>
+
+            <center>
+
+                <button class="botão" onclick="enviarMenssagem()" type="submit">Enviar</button>
+                <p id="menssagem_final"></p>
+
+            </center>
+
+        </div>
+
+    </div>
+
+
+    <div>
+        <center>
+            <footer>@start2021</footer>
+        </center>
+
+    </div>
+
+
+    <script src="../js/navbar-config.js"></script>
+</body>
+
+</html>

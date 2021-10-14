@@ -1,0 +1,98 @@
+div#principal-container{
+    background-image: url("../assets/reserva-bg.jpeg");
+    background-position: center;
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+    height: 100%vh;
+    width: 100vw;
+    background-color: #F7F7F7;
+}
+
+#showForm a {
+    font-size: 18px;
+    margin: 20px;
+    color: #F7F7F7;
+    font-weight: bold;
+}
+
+div#container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+div#container> img{
+    width: 42%;
+}
+
+
+div#reserv-present{
+    color: #FFF;
+}
+
+div#reserv-present > h1{
+    font-size: 54px;
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+div#reserv-present > p, button{
+    font-size: 24px;
+    font-weight: normal;
+    font-family: Roboto, 'sans-serif';
+}
+
+div#reserv-present > button{
+    color: #FFF;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #CC9B61;
+
+    margin-top: 30px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    color:rgb(0,0,0);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width:40%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* form > input{
+    
+  } */
