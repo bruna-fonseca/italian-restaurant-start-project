@@ -13,30 +13,6 @@
     --verde : #18434c;
     --bronze : #CC9B61;
 }
-#mensagem{
-    background: rgb(245, 72, 72);
-    letter-spacing: 2px;
-    display: inline-block;
-    color: #f1f1f1;
-    border-radius: 3px;
-}
-
-#msgSuccess{
-    background: rgba(86, 245, 72, 0.616);
-    letter-spacing: 2px;
-    display: inline-block;
-    color: #363636;
-    border-radius: 3px;
-}
-
-#msg2{
-    background: rgba(15, 143, 43, 0.795);
-    color: rgba(255, 255, 255, 0.664);
-    font-weight: 600;
-    border: 1px solid rgb(194, 189, 189);
-    border-radius: 3px;
-}
-
 
 section{
   
@@ -73,6 +49,8 @@ section .imgBx img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    animation: fadeInLeft;
+    animation-duration: 3s;
 }
 
 section .contentBx{
@@ -85,6 +63,8 @@ section .contentBx{
 
 section .formBx{
     width: 50%;
+    animation: zoomIn;
+    animation-duration: 3s;
 }
 
 .formBx h2{
@@ -183,4 +163,106 @@ section .formBx{
         margin: 30px 0 10px;
         font-weight: 500;
     }
+
+
 }
+.modal {
+    display: none; 
+    position: absolute;
+    left: 50%;
+    top: 0; 
+    width: 50%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(43, 38, 38, 0.4); 
+    
+  }
+
+  @keyframes animate{
+      from{opacity: 1;}
+      from{opacity: 0;}       
+    }
+
+  .modal-content {
+    background-color: #e94949;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 6px;
+    width: 80%;  
+    margin-top: 6%;
+    font-weight: bold;    
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    position: relative;
+    top: -10px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /*SUCESSO*/
+.modalSucesso {
+    display: none; 
+    position: absolute;
+    left: 50%;
+    top: 0; 
+    width: 50%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(43, 38, 38, 0.4); 
+    
+}
+  .modal-content-sucesso {
+    background-color: var(--verde);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 6px;
+    margin-top: 8%;
+    width: 80%;  
+    font-weight: bold; 
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 5s;   
+  }
+
+  /* The Close Button */
+  .close2 {
+    color: #aaa;
+    position: relative;
+    top: -10px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    animation: animate;
+  }
+
+  .close2:hover,
+  .close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #msg2{
+      display: none;
+    background-color: var(--verde);
+    color: var(--bronze);
+    margin: 15% auto;
+    padding: 2px;
+    border: 1px solid rgb(90, 90, 90);
+    width: 80%;  
+    font-weight: bold;    
+  }
