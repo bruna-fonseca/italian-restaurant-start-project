@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --verde : #18434c;
+    --bronze : #CC9B61;
+}
+
+.bronze {
+    color: var(--bronze);
+}
+
+.navbar {
+    background-color: transparent;
+    background-image: none;
+}
+
+#nav-links[class*="is-active"] a {
+  color: var(--verde);
+}
+
+#mensagem{
+    background: rgb(245, 72, 72);
+    letter-spacing: 2px;
+    display: inline-block;
+    color: #f1f1f1;
+    border-radius: 3px;
+}
+
+#msgSuccess{
+    background: rgba(86, 245, 72, 0.616);
+    letter-spacing: 2px;
+    display: inline-block;
+    color: #363636;
+    border-radius: 3px;
+}
+
+#msg2{
+    background: rgba(15, 143, 43, 0.795);
+    color: rgba(255, 255, 255, 0.664);
+    font-weight: 600;
+    border: 1px solid rgb(194, 189, 189);
+    border-radius: 3px;
+}
+
+section{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+}
+
+section .imgBx{
+
+    position: relative;
+    width: 50%;
+    height: 100%;
+    
+  background-color: var(--verde)
+}
+
+section .imgBx :before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+section .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeInLeft;
+    animation-duration: 3s;
+}
+
+
+section .contentBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+section .formBx{
+    width: 50%;
+    animation: zoomIn;
+    animation-duration: 3s;
+}
+
+.formBx h2{
+    color: #18434c;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #CC9B61;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.inputBx{
+    margin-bottom: 20px;
+}
+
+.inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607d8b;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.inputBx input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.inputBx input[type="submit"]{
+
+    background: #18434c;
+    color: #CC9B61;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.inputBx input[type="submit"]:hover{
+    
+    background: #272727;
+    color: #CC9B61;
+}
+
+.remenber{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-weight: 400;
+    font-size: 14px;
+}
+.inputBx p {
+    color: #607d8b ;
+}
+
+.inputBx p a{
+    color: #CC9B61;
+}
+
+@media (max-width: 739px)
+{
+    section .imgBx{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    section .contentBx {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section .contentBx .formBx{
+        width: 100%;
+        padding: 40px;
+        background: rgba(255 255 255 / 0.9);
+        margin: 50px;
+    }
+    section .contentBx .formBx h3{
+        color: #607d8b;
+        text-align: center;
+        margin: 30px 0 10px;
+        font-weight: 500;
+    }
+
+
+}
+.modal {
+    display: none; 
+    position: absolute;
+    left: 50%;
+    top: 0; 
+    width: 50%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(43, 38, 38, 0.4); 
+    
+  }
+
+  @keyframes animate{
+      from{opacity: 1;}
+      from{opacity: 0;}       
+    }
+
+  .modal-content {
+    background-color: #e94949;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 6px;
+    width: 80%;  
+    margin-top: 6%;
+    font-weight: bold;    
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    position: relative;
+    top: -10px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /*SUCESSO*/
+.modalSucesso {
+    display: none; 
+    position: absolute;
+    left: 50%;
+    top: 0; 
+    width: 50%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(43, 38, 38, 0.4); 
+    
+}
+  .modal-content-sucesso {
+    background-color: var(--verde);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 6px;
+    margin-top: 8%;
+    width: 80%;  
+    font-weight: bold; 
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 5s;   
+  }
+
+  /* The Close Button */
+  .close2 {
+    color: #aaa;
+    position: relative;
+    top: -10px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    animation: animate;
+  }
+
+  .close2:hover,
+  .close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #msg2{
+      display: none;
+    background-color: var(--verde);
+    color: var(--bronze);
+    margin: 15% auto;
+    padding: 2px;
+    border: 1px solid rgb(90, 90, 90);
+    width: 80%;  
+    font-weight: bold;    
+  }
+
+  #msg2{
+      display: none;
+    background-color: var(--verde);
+    color: var(--bronze);
+    margin: 15% auto;
+    padding: 2px;
+    border: 1px solid rgb(90, 90, 90);
+    width: 80%;  
+    font-weight: bold;    
+  }

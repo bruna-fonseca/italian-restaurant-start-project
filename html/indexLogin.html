@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="/css/styleLogin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+
+  <title>Tela de login - Allora</title>
+
+
+  <title>Tela de login</title>
+  <style>
+    .cabecalho {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a href="home.html" class="navbar-item">
+        <img src="../assets/Prancheta-4.png" class="px-2 py-2 ml-6" alt="logo"
+            style="max-height: 90px;">
+    </a>
+      <a id="burger" class="navbar-burger">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="nav-links" class="navbar-menu px-10 py-10 mr-6">
+      <div class="navbar-end">
+        <a href="/html/home.html" class="navbar-item bronze">home</a>
+        <a href="cardapio.html" class="navbar-item bronze">menu</a>
+        <a href="pratos-populares.html" class="navbar-item bronze">best-sellers</a>
+        <a href="reservas.html" class="navbar-item bronze">reservas</a>
+        <a href="indexLogin.html" class="navbar-item bronze">login</a>
+        <a href="contato.html" class="navbar-item bronze">contato</a>
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <section>
+
+
+    <div class="imgBx">
+      <img src="/assets/Prancheta 3.png" alt="Img Initial" class="animate__animated animate__zoomIn animate__delay-1 ">
+    </div>
+
+    <div class="contentBx">
+
+      <div class="formBx">
+        <h2 class="animate__animated animate__zoomIn ">Login</h2>
+        <form action="" onsubmit="return validarLogin() " class="animate__animated animate__zoomIn ">
+          <div class="inputBx">
+            <span>Username</span>
+            <input type="text" name="nome" id="login">
+          </div>
+          <div class="inputBx">
+            <span>Password</span>
+            <input type="password" name="pass" id="senha" minlength="8">
+          </div>
+          <div class="remenber">
+            <input type="checkbox" name=""> Lembre-me
+          </div>
+          <div class="inputBx">
+            <input type="submit" value="Acessar" name="">
+          </div>
+
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p style="color: rgb(224, 224, 224);">Por favor, verifique se os campos foram preenchidos corretamente.
+              </p>
+            </div>
+
+          </div>
+
+          <div id="myModalSucesso" class="modalSucesso">
+            <!-- Modal content -->
+            <div class="modal-content-sucesso">
+              <span class="close2">&times;</span>
+              <p style="color: var(--bronze);" >Seja bem vindo ao restaurante Allora</p>
+            </div>
+
+          </div>
+          <!--<span id="mensagem" onclick="fechar()"> Verifique se os campos foram preenchidos corretamente &timesd;</span>
+          <span id="msgSuccess" onclick="fechar()">Seja Bem vindo ao Restaurante Allora&times;</span>
+        -->
+          <div class="inputBx"> <br>
+            <p>Esqueceu a senha?<a href="#" onclick="signout()">clique aqui.</a></p>            
+             <span id="msg2"></span>
+            </div>
+  
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="/js/scriptLogin.js"></script>
+  <script src="../js/navbar-config.js"></script>
+</body>
+
+</html>
