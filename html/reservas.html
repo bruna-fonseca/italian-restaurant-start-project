@@ -37,8 +37,8 @@
                 <div id="nav-links" class="navbar-menu px-10 py-10 mr-6">
                     <div class="navbar-end">
                         <a href="home.html" class="navbar-item bronze">home</a>
-                        <a href="pratos-populares.html" class="navbar-item bronze">best-sellers</a>
                         <a href="cardapio-chris.html" class="navbar-item bronze">menu</a>
+                        <a href="pratos-populares.html" class="navbar-item bronze">best-sellers</a>
                         <a href="reservas.html" class="navbar-item bronze">reservas</a>
                         <a href="indexLogin.html" class="navbar-item bronze">login</a>
                         <a href="contato.html" class="navbar-item bronze">contato</a>
@@ -65,7 +65,7 @@
                             <label for="reservHour">Hora:</label>
                             <input type="time" name="reservHour" id="reservHour" class="input" onclick="clearMessage()">
                             <label for="reservPeople">Pessoas:</label>
-                            <input type="number" name="reservPeople" id="reservPeople" class="input" onclick="clearMessage()">
+                            <input type="number" min="1" name="reservPeople" id="reservPeople" class="input" onclick="clearMessage()">
                             <h2>Contato principal</h2>
                             <label for="reservName">Nome: </label>
                             <input type="text" name="reserName" id="reservName" class="input" onclick="clearMessage()">
