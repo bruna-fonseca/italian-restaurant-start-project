@@ -13,7 +13,6 @@
   border-radius: 10px;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -38,11 +37,11 @@ body {
 }
 
 .bronze {
-  color: #CC9B61;
+  color: var(--bronze);
 }
 
 .azul {
-  color: #18464C;
+  color: var(--blue);
 }
 
 .navbar {

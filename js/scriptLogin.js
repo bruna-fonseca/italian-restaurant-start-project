@@ -1,5 +1,5 @@
 
-//Modal de Erro
+//MODAL ERRO
 
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
@@ -40,6 +40,7 @@ window.onclick = function (event2) {
     }
 }
 
+//VALIDANDO INPUTS VAZIO
 
 function validarLogin() {
     let login = document.getElementById('login').value
@@ -56,6 +57,7 @@ function validarLogin() {
     }
 }
 
+// FECHANDO FEEDBACKS
 function fechar() {
     let msg = document.getElementById('mensagem')
     let msgSuccess = document.getElementById('msgSuccess')
@@ -66,10 +68,7 @@ function fechar() {
 
 
 function signout() {
-    let esqueceuSenha = document.getElementById('msg2')
-    esqueceuSenha.style.display = "block";
-    esqueceuSenha.innerHTML = " Para recuperar a senha procure entrar em contato com o restaurante.";
-    
+  alert("Para recuperar a senha procure entrar em contato com o restaurante.") 
 }
 
 
