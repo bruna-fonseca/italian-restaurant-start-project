@@ -22,7 +22,7 @@ Projeto em grupo feito para a avaliação dos conhecimentos em HTML, CSS e Javas
 ## Projeto📋
 
 Você pode conferir o design inicial do projeto no
-[Figma.](https://www.figma.com/file/25wftXnAS0lizVhBBRh7Q1/Restaurante-Copy)
+[Figma](https://www.figma.com/file/25wftXnAS0lizVhBBRh7Q1/Restaurante-Copy) e o acessar o nosso resultado final através desse [link](https://allora-restaurante.netlify.app/index.html)
 
 <h2 id="home">Tela Home</h2>
 
