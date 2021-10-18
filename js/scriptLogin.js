@@ -31,7 +31,7 @@ function showModalSuccess() {
 
 span2.onclick = function () {
     modal2.style.display = "none";
-    window.location.href='./home.html'
+    window.location.href='../index.html'
 }
 
 window.onclick = function (event2) {
